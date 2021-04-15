@@ -42,14 +42,14 @@
                                     <i class="fa fa-facebook"></i>
                                 </button>Facebook</td>
                                 <td></td>
-                                <td><button><a type="button" class="btn btn-sm social facebook" href="https://www.facebook.com/adeliaadb" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Facebook</span></div></button></div></a></button></td>
+                                <td><button><a type="button" class="btn btn-sm social facebook" href="https://www.facebook.com/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Facebook</span></div></button></div></a></button></td>
                             </tr>
                             <tr>
                                 <td><button type="button" class="btn btn-sm social tumblr" style="margin-bottom: 4px">
                                     <i class="fa fa-tumblr"></i>
                                 </button>Tumblr</td>
                                 <td></td>
-                                <td><button><a type="button" class="btn btn-sm social tumblr" href="https://www.tumblr.com/blog/blewzinky" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Tumblr</span></div></button></div></a></button></td>
+                                <td><button><a type="button" class="btn btn-sm social tumblr" href="https://www.tumblr.com/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Tumblr</span></div></button></div></a></button></td>
                             </tr>
                             <tr>
                                 <td><button type="button" class="btn btn-sm social linkedin" style="margin-bottom: 4px">
@@ -63,7 +63,7 @@
                                     <i class="fa fa-instagram"></i>
                                 </button>Instagram</td>
                                 <td></td>
-                                <td><button><a type="button" class="btn btn-sm social instagram" href="https://www.instagram.com/adelia.db/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Instagram</span></div></button></div></a></button></td></button></td>
+                                <td><button><a type="button" class="btn btn-sm social instagram" href="https://www.instagram.com/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Instagram</span></div></button></div></a></button></td>
                             </tr>
                             <tr>
                                 <td><button type="button" class="btn btn-sm">
@@ -72,7 +72,7 @@
                                 </a>
                                 </button>Google Photos</td>
                                 <td></td>
-                                <td><button type="button" class="btn btn-outline-secondary">Connect</button></td>
+                                <td><button><a type="button" class="btn btn-sm btn-outline-secondary" href="https://www.google.com/photos/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Connect</span></div></button></div></a></button></td>
                             </tr>
                       </tbody>
                   </table>
