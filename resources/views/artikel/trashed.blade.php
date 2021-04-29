@@ -2,16 +2,16 @@
 
 @section('judul')
   <div>
-    Comments
+    Comments Yang Telah Dihapus
   </div>
 @endsection
   
 @section('main')
-  	@if(Session::has('Pesan'))
-        <div class="alert alert-success">
-          {{Session::get('Pesan')}}
-        </div>
-    @endif
+@if(Session::has('Pesan'))
+		    <div class="alert alert-success">
+		        {{Session::get('Pesan')}}
+		    </div>
+@endif
 <div class="breadcrumbs">
             <div class="col-sm-7">
                 <div class="page-header float-left">
@@ -38,7 +38,7 @@
                 </div>
         </div>
     </div>
-
+		
 		<div class="tab-content pl-3 pt-2" id="nav-tabContent">
 			<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 				<div class="col-lg-12">
@@ -62,7 +62,8 @@
 									</div>
 								</div>
 							<div class="page-header float-right">
-								<a href="/comments/{{$kmn->id}}/delete"><i class="ti-trash"></i> Delete<span class="icon-name"></span></a>
+								<a href="{{ route('kill', $kmn->id)}}"><i class="ti-trash"></i>Delete<span class="icon-name"></span></a>
+								<a href="{{ route('restore', $kmn->id)}}"><i class="fa fa-mail-reply"></i> Restore<span class="text-muted"></span></a>
 							</div>
 						</div>
 					</div>

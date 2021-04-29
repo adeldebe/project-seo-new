@@ -20,25 +20,41 @@ Route::get('/logout','Auth\LoginController@logout');
 
 //     return redirect('/');
 // })->middleware(['auth', 'signed'])->name('verification.verify');
+Route::group(['middleware' => 'auth'],function(){
+	Route::get('/','BlogController@index');
+	Route::get('/isi/{slug}', 'BlogController@isi_article')->name('isi');
+	Route::get('/cari', 'BlogController@cari')->name('cari');
 
-Route::get('/','BlogController@index');
-Route::get('/isi/{slug}', 'BlogController@isi_article')->name('isi');
-Route::post('/insertData', 'BlogController@insertData')->name('insertData');
+	// article
+	Route::get('/article', 'ArticleController@index');
+	Route::get('/article/create','ArticleController@create');
+	Route::post('/article', 'ArticleController@store');
+	Route::get('/article/{id}/edit', 'ArticleController@edit');
+	Route::patch('/article/{id}', 'ArticleController@update');
+	Route::get('/article/{id}/delete', 'ArticleController@delete');
+	Route::get('/article/{id}', 'ArticleController@insertData')->name('inserData');
+	Route::get('/statistic', 'StatisticController@statistic');
 
-Route::get('/article', 'ArticleController@index');
-Route::get('/article/create','ArticleController@create');
-Route::post('/article', 'ArticleController@store');
-Route::get('/article/{id}/edit', 'ArticleController@edit');
-Route::patch('/article/{id}', 'ArticleController@update');
-Route::get('/article/{id}/delete', 'ArticleController@delete');
-Route::get('/user', 'UserController@show');
-Route::get('/user', 'UserController@index');
-Route::get('/socmed', 'SocmedController@socmed');
-Route::get('/sharingbuttons', 'SocmedController@sharingbuttons');
-Route::get('/comments', 'CommentsController@index');
+	// Profile
+	Route::get('/user', 'UserController@show');
+	Route::get('/user', 'UserController@index');
+	Route::get('/user/edit/{id}', 'UserController@edit')->name('user.edit');
+	Route::post('/user/update/{id}', 'UserController@update')->name('user.update');
 
-Route::resource('/category', 'CategoryController');
-Route::resource('/tag', 'TagController');
+	// DLL
+	Route::get('/socmed', 'SocmedController@socmed');
+	Route::get('/sharingbuttons', 'SocmedController@sharingbuttons');
 
+	// komentar
+	Route::get('/comments/tampil_hapus', 'CommentsController@tampil_hapus')->name('tampil_hapus');
+	Route::get('/comments/restore/{id}', 'CommentsController@restore')->name('restore');
+	Route::get('/comments/kill/{id}', 'CommentsController@kill')->name('kill');
+	Route::get('/comments/{id}/delete', 'CommentsController@destroy');
+	Route::get('/comments', 'CommentsController@index');
+	Route::post('/comment', 'ArticleController@store_comment')->name('store_comment');
 
+	// Kategori dan Tags
+	Route::resource('/category', 'CategoryController');
+	Route::resource('/tag', 'TagController');
+});
 

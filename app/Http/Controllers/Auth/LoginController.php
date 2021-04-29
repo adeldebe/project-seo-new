@@ -20,7 +20,7 @@ class LoginController extends Controller
     {
     	if( Auth::attempt($request->only('email','password'))) 
         {
-    		return redirect('/article');
+    		return redirect('/');
     	}
     	return redirect('/login');
     }

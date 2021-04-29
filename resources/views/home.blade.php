@@ -27,6 +27,7 @@
     <script src="{{ asset('style/assets/js/plugins.js') }}"></script>
     <script src="{{ asset('style/assets/js/main.js') }}"></script>
     <script src="{{ asset('style/assets/js/lib/chosen/chosen.jquery.min.js')}}"></script>
+    @yield('footer')
 
     <script>
         jQuery(document).ready(function() {
@@ -51,7 +52,7 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/"> <i class="menu-icon fa fa-bar-chart active"></i>Statistics</a>
+                        <a href="/statistic"> <i class="menu-icon fa fa-bar-chart active"></i>Statistics</a>
                     </li>
                     <li>
                         <a href="/article"> <i class="menu-icon fa fa-puzzle-piece active"></i>Articles</a>
@@ -81,15 +82,15 @@
                 </div>
                 
                 <div class="col-sm-5">
-                    <div class="user-area dropdown float-right">
+                    <div class="dropdown user-dropdown float-right">
                         <a href="#" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="user-avatar">Hi,admin</div>
-                            <img class="user-avatar rounded-circle" src="{{ asset('style/images/admin.png') }}">
+                            <i class="fa fa-user" style="font-size: 19pt"> {{ Auth::user()->name }}</i><b class="caret"></b>
                         </a>
-                        <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
-                            <a class="nav-link" href="/logout"><i class="fa fa-power -off"></i>Logout</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a href="/user"><i class="fa fa-user"></i> Profile</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
+                            <li><a href="/logout"><i class="fa fa-power-off"></i> Log Out</a></li>
+                        </ul>
                     </div>
                 </div>
         </header><!-- /header -->

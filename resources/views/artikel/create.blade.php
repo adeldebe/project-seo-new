@@ -1,7 +1,12 @@
 @extends('home')
 
-@section('main')
+@section('judul')
+  <div>
+    Tambah Data
+  </div>
+@endsection
 
+@section('main')
 <div class="row">
 		<div class="col-md-8 offset-sm-2">
 			<form action="{{ url("/article") }}" method="post" enctype="multipart/form-data">
@@ -20,7 +25,7 @@
 				</div>
 				<div class="form-group">
 					<label for="isi_artikel">isi artikel:</label>
-					<textarea class="form-control" name="isi_artikel" rows="5"></textarea>
+					<textarea class="form-control" name="isi_artikel" id="isi_artikel" rows="5"></textarea>
 				</div>
 				<div class="form-group">
 					<label for="penulis">penulis</label>
@@ -51,5 +56,9 @@
 			</form>
 		</div>
 	</div>
-
+ 
+ <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+ <script>
+                CKEDITOR.replace( 'isi_artikel' );
+  </script>
 @endsection

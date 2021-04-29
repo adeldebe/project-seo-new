@@ -6,6 +6,8 @@ use App\Category;
 use App\Article;
 use App\Tags;
 use App\Comment;
+use App\User;
+use Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -19,7 +21,15 @@ class ArticleController extends Controller
     public function index()
     {
         $article = Article::all();
-        return view('artikel.index',compact('article'));  
+        $user = User::All();
+        return view('artikel.index',compact('article','user'));  
+    }
+
+    public function article($id)
+    {
+        $hasil = Article::find($id);
+        $komen = Comment::where('id_article', $id)->get();
+        return view('isi', compact('hasil','komen','id'));
     }
 
     /**
@@ -68,7 +78,7 @@ class ArticleController extends Controller
         $article->save();
         
         $article->tags()->attach($request->input('tags'));
-        return redirect('/article');
+        return redirect('/article')->with('Pesan', 'Data Berhasil Di Tambah');
     }
 
     /**
@@ -135,7 +145,7 @@ class ArticleController extends Controller
         $article->save();
         $article->tags()->sync($request->input('tags'));
 
-        return redirect('/article');
+        return redirect('/article')->with('Pesan', 'Data Berhasil Di Edit');
     }
 
 
@@ -150,5 +160,26 @@ class ArticleController extends Controller
         $article = Article::find($id);
         $article->delete($article);
         return redirect('/article')->with('sukses', 'delete data berhasil');
+    }
+
+    public function insertData(Request $req, $id)
+    {
+        $hasil = Article::find($id);
+        $user = new Comment();
+        $user->name = $req->name;
+        $user->comment = $req->komentar;
+        $user->id_article = $req->id;
+        $user->save();
+        return redirect()->action('ArticleController@article',compact('id'));
+    }
+
+    public function store_comment (Request $request)
+    {
+        $data = [
+            'name' => $request->name,
+            'comment' => $request->komentar,
+            'id_article' => $request->id_article,
+        ];
+        $act = Comment::create($data);
     }
 }

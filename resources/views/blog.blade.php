@@ -24,12 +24,11 @@
     <div class="container">
 	    <section class="cta-section theme-bg-light py-3">
 		    <div class="container text-center">
-			    <form class="signup-form form-inline justify-content-center pt-8">
+			    <form class="signup-form form-inline justify-content-center pt-8" action="{{ route('cari') }}" method="get">
                     <div class="form-group">
-                        <label class="sr-only" for="search">masukkan pilian</label>
-                        <input type="text" id="search" name="search" class="form-control mr-md-1" placeholder="Pencarian">
+                        <input type="text" id="cari" name="cari" class="form-control mr-md-1" placeholder="Pencarian">
                     </div>
-                    <button type="submit" class="fa fa-search"></button>
+                    <button type="submit" class="fa fa-search"></button>	
                 </form>
 		    </div><!--//container-->
 	    </section>

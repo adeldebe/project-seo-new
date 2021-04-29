@@ -7,28 +7,33 @@
 @endsection
 	
 @section('main')
+ @if(Session::has('Pesan'))
+        <div class="alert alert-success">
+          {{Session::get('Pesan')}}
+        </div>
+  @endif
 	<div class="breadcrumbs">
-            <div class="col-sm-5">
+            <div class="col-sm-7">
                 <div class="page-header float-left">
                     <div class="page-title">
                         <ul class="nav nav-tabs">
                           <li class="nav-item">
-                          <a class="nav-link" href="#">Publish</a>
+                          <a class="nav-link" href="#">Publish<span class="badge badge-primary"></span></a>
                           </li>
                           <li class="nav-item">
-                          <a class="nav-link" href="#">Drafts</a>
+                          <a class="nav-link" href="#">Drafts<span class="badge badge-primary"></span></a>
                           </li>
                           <li class="nav-item">
-                          <a class="nav-link" href="#">Scheduled</a>
+                          <a class="nav-link" href="#">Scheduled<span class="badge badge-primary"></span></a>
                           </li>
                           <li class="nav-item">
-                          <a class="nav-link" href="#">Trashed</a>
+                          <a class="nav-link" href="#">Trashed<span class="badge badge-primary"></span></a>
                           </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-5">
                 <div class="page-header float-right">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
@@ -71,9 +76,9 @@
                             </ul>
                             @endforeach   
                           </td>
-                          <td>
+                          <!-- <td>
                             <img src="{{ asset( $data->gambar) }}" class="img-fluid" style="width: 100px">
-                          </td>
+                          </td> -->
                           <td>
                             <a type="button" class="btn btn-success btn-sm" href="{{ url("article/{$data->id}/edit") }}">edit</a>
                             <a href="/article/{{$data->id}}/delete" type="button" class="btn btn-danger btn-sm" onclick="return confirm('Apa anda yakin')">delete</a>

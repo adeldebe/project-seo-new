@@ -1,7 +1,12 @@
 @extends('home')
 
-@section('main')
+@section('judul')
+  <div>
+    Edit Data
+  </div>
+@endsection
 
+@section('main')
 <div class="row">
 		<div class="col-md-8 offset-sm-2">
 			<form action="{{ url("/article/{$article->id}") }}" method="POST" enctype="multipart/form-data">
@@ -62,4 +67,8 @@
 			</form>
 		</div>
 	</div>
+	<script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+ <script>
+                CKEDITOR.replace( 'isi_artikel' );
+  </script>
 @endsection

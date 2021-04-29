@@ -35,35 +35,35 @@
                                     <i class="fa fa-twitter"></i>
                                 </button>Twitter</td>
                                 <td></td>
-                                <td><button><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Connect</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></button></td>
+                                <td><button><a href="https://twitter.com/" data-show-count="false">Connect</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></button></td>
                             </tr>
                             <tr>
                                 <td><button type="button" class="btn btn-sm social facebook" style="margin-bottom: 4px">
                                     <i class="fa fa-facebook"></i>
                                 </button>Facebook</td>
                                 <td></td>
-                                <td><button><a type="button" class="btn btn-sm social facebook" href="https://www.facebook.com/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Facebook</span></div></button></div></a></button></td>
+                                <td><button><a type="button" href="https://www.facebook.com/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Connect</span></div></button></div></a></button></td>
                             </tr>
                             <tr>
                                 <td><button type="button" class="btn btn-sm social tumblr" style="margin-bottom: 4px">
                                     <i class="fa fa-tumblr"></i>
                                 </button>Tumblr</td>
                                 <td></td>
-                                <td><button><a type="button" class="btn btn-sm social tumblr" href="https://www.tumblr.com/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Tumblr</span></div></button></div></a></button></td>
+                                <td><button><a type="button" href="https://www.tumblr.com/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Connect</span></div></button></div></a></button></td>
                             </tr>
                             <tr>
                                 <td><button type="button" class="btn btn-sm social linkedin" style="margin-bottom: 4px">
                                     <i class="fa fa-linkedin"></i>
                                 </button>Linkedln</td>
                                 <td></td>
-                                <td><button><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script><script type="IN/Share" data-url="https://www.linkedin.com"></script></button></td>
+                                <td><button><a type="button" href="https://id.linkedin.com/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Connect</span></div></button></div></a></button></td>
                             </tr>
                             <tr>
                                 <td><button type="button" class="btn btn-sm social instagram" style="margin-bottom: 4px">
                                     <i class="fa fa-instagram"></i>
                                 </button>Instagram</td>
                                 <td></td>
-                                <td><button><a type="button" class="btn btn-sm social instagram" href="https://www.instagram.com/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Instagram</span></div></button></div></a></button></td>
+                                <td><button><a type="button" href="https://www.instagram.com/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Connect</span></div></button></div></a></button></td>
                             </tr>
                             <tr>
                                 <td><button type="button" class="btn btn-sm">
@@ -72,7 +72,7 @@
                                 </a>
                                 </button>Google Photos</td>
                                 <td></td>
-                                <td><button><a type="button" class="btn btn-sm btn-outline-secondary" href="https://www.google.com/photos/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Connect</span></div></button></div></a></button></td>
+                                <td><button><a type="button" href="https://www.google.com/photos/" target="_blank" id="u_0_1_w3" alt="" width="12" height="12"><span class="_49vh _2pi7">Connect</span></div></button></div></a></button></td>
                             </tr>
                       </tbody>
                   </table>
