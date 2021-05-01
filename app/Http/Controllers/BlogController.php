@@ -17,6 +17,7 @@ class BlogController extends Controller
     public function isi_article($slug) 
     {
         $article = Article::where('slug', $slug)->first();
+        $article->increment('views');
         $prev_id = Article::where('id', '<', $article->id)->max('id');
         $next_id = Article::where('id', '>', $article->id)->min('id');
 

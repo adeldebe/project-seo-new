@@ -14,7 +14,6 @@ class StatisticController extends Controller
         foreach($statistic as $stat){
             $categories[] = $stat->name;
     }
-        dd($categories);
 }
 }
 

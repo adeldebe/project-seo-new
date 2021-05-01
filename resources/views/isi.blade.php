@@ -35,7 +35,7 @@
 
 				    <div class="meta mb-3"><span class="date">Published {{ $article->created_at->diffForHumans() }}</span>
 				    <span class="time"> {{ $article->category->name_kategori }}</span><span>
-                           <i class="fa fa-eye"></i> 35</span>
+                           <i class="fa fa-eye"></i> {{ $article->views }}</span>
 				    <br><br><img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{{ asset($article->gambar) }}" alt="image">
 					</div>
 			    </header>
