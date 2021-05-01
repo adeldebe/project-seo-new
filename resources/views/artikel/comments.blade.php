@@ -18,7 +18,7 @@
                     <div class="page-title">
                         <ul class="nav nav-tabs">
                           <li class="nav-item">
-                          <a class="nav-link" href="/comments">All ()<span class="badge badge-primary"></span></a>
+                          <a class="nav-link" href="/comments">All <span class="badge badge-primary">({{ \App\Comment::totalSampah() }})</span></a>
                           </li>
                           <li class="nav-item">
                           <a class="nav-link" href="{{ route('tampil_hapus')}}">Trash ()<span class="badge badge-primary"></span></a>

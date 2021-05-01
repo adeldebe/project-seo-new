@@ -18,9 +18,7 @@
             </nav>
         </div>
     </div>
-@endsection  
 
-@section('footer')
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <div class="panel">
         <div id="Views"></div>
@@ -71,7 +69,7 @@
         },
         series: [{
             name: 'Jumlah',
-            data: [50, 23, 20, 15, 17, 19, 10, 13, 25, 18, 16, 12]
+            data: [35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35]
 
         }]
     });

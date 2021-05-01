@@ -49,7 +49,7 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/"> <i class="menu-icon fa fa-bar-chart"></i>Statistics</a>
+                        <a href="/statistic"> <i class="menu-icon fa fa-bar-chart"></i>Statistics</a>
                     </li>
                     <li>
                         <a href="/article"> <i class="menu-icon fa fa-puzzle-piece"></i>Articles</a>

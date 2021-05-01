@@ -18,7 +18,7 @@
                     <div class="page-title">
                         <ul class="nav nav-tabs">
                           <li class="nav-item">
-                          <a class="nav-link" href="#">Publish<span class="badge badge-primary"></span></a>
+                          <a class="nav-link" href="#">Publish<span class="badge badge-primary">{{ \App\Article::totalStudent() }}</span></a>
                           </li>
                           <li class="nav-item">
                           <a class="nav-link" href="#">Drafts<span class="badge badge-primary"></span></a>
@@ -37,12 +37,16 @@
                 <div class="page-header float-right">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
-                            <li><div class="fa-hover col-lg-3 col-md-6"><a href="#search"><i class="fa fa-search"></i></a></div></li>
+                            <li><form class="input-group rounded" action="{{ route('golek') }}" method="get">
+                                  <input type="text" id="golek" name="golek" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                                  <span class="input-group-text border-0" id="search-addon">
+                                    <i class="fa fa-search"></i>
+                                  </span>
+                            </form></li>
                         </ol>
                     </div>
                 </div>
-        </div>
-    </div>
+          </div>
 
     <div class="content mt-3">
       <div class="animated fadeIn">

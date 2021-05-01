@@ -24,6 +24,7 @@ Route::group(['middleware' => 'auth'],function(){
 	Route::get('/','BlogController@index');
 	Route::get('/isi/{slug}', 'BlogController@isi_article')->name('isi');
 	Route::get('/cari', 'BlogController@cari')->name('cari');
+	Route::get('/golek', 'ArticleController@golek')->name('golek');
 
 	// article
 	Route::get('/article', 'ArticleController@index');

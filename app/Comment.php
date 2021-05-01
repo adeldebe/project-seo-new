@@ -12,4 +12,9 @@ class Comment extends Model
     protected $table = 'comments';
     protected $fillable = ['id','name','comment','id_article'];
     protected $primayKey = 'id';
+
+    public static function totalSampah()
+    {
+    	return Comment::count();
+    }
 }

@@ -88,7 +88,6 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="/user"><i class="fa fa-user"></i> Profile</a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
                             <li><a href="/logout"><i class="fa fa-power-off"></i> Log Out</a></li>
                         </ul>
                     </div>

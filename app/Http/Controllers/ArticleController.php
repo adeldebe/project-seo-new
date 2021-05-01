@@ -32,6 +32,14 @@ class ArticleController extends Controller
         return view('isi', compact('hasil','komen','id'));
     }
 
+    public function golek(Request $request)
+    {
+        $golek = $request->golek;
+
+        $article = Article::Where('judul', 'like', "%".$request->golek."%")->get();
+        return view('artikel.index', compact('article'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

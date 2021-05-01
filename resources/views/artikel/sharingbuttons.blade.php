@@ -31,16 +31,15 @@
                                 <br><button type="button" class="btn btn-secondary btn-lg btn-block">Preview</button>
                                 <br>
                                 <br><p>SHARE THIS :</p>
-                            
-                                <button type="button" class="btn btn-sm social facebook" style="margin-bottom: 4px">
+                        
+                                <a type="button" class="btn btn-sm social facebook" href="https://www.facebook.com/" style="margin-bottom: 4px" target="_blank" id="u_0_1_w3" alt="" width="12" height="12">
                                     <i class="fa fa-facebook"></i>
                                     <span>Facebook</span>
-                                </button>
-
-                                <button type="button" class="btn btn-sm social twitter" style="margin-bottom: 4px">
+                                </a>
+                                <a type="button" class="btn btn-sm social twitter" href="https://twitter.com/" style="margin-bottom: 4px" target="_blank" id="u_0_1_w3" alt="" width="12" height="12">
                                     <i class="fa fa-twitter"></i>
                                     <span>Twitter</span>
-                                </button>
+                                </a>
                                 <br>
                             
                                 <br>

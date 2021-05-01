@@ -17,4 +17,9 @@ class Article extends Model
     	return $this->belongsToMany('App\Tags');
     }
 
+    public static function totalStudent()
+    {
+    	return Article::count();
+    }
+
 }
